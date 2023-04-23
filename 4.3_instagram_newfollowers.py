@@ -3,7 +3,7 @@ import instaloader
 import getpass
 
 
-f = open("جلسه چهارم/instagram_unfollow_finder/followers.txt", "r")
+f = open("python_practice_fourth_session/followers.txt", "r")
 old_followers = []
 for line in f:
     old_followers.append(line)
@@ -28,7 +28,7 @@ for new_follower in new_followers:
         your_new_followers.append(new_follower)
 
 
-f = open("جلسه چهارم/instagram_unfollow_finder/followers.txt", "w")  
+f = open("python_practice_fourth_session/followers.txt", "w")  
 for follower in new_followers:
     f.write(follower + "\n")
 f.close
